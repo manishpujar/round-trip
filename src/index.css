@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #2563eb;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #2563eb;
+}
+
+.toggle-label {
+  transition: background-color 0.2s ease-in;
+}
+
+.toggle-checkbox {
+  right: 0;
+  transition: all 0.2s ease-in;
+}
+
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #2563eb;
+}
+
+.toggle-checkbox:not(:checked) {
+  right: 6px;
+  border-color: #9ca3af;
+}
